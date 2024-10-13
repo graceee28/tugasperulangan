@@ -6,8 +6,14 @@ public class TugasPerulangan2{
         Scanner input = new Scanner(System.in);
         int N  = input.nextInt();
 
-        // Pekerjaan anda dimulai dari sini
-
-        //Pekerjaan anda berakhir disini
+       pembelianPerhari *= 28;
+        while (stokAwal < pembelianPerhari) {
+            stokAwal = -1;
+            break;
+        }
+        while (stokAwal >pembelianPerhari) {
+            stokAwal -= pembelianPerhari;
+            break;
+        }
     }
 }
